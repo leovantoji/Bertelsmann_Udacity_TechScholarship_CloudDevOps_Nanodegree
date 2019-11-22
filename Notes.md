@@ -68,3 +68,7 @@
   - `~$ rm example`: permanently delete a file named `example` without double-checking.
   - `~$ rm -i example`: permanently delete a file named `example`, but double-check first.
   - `~$ rmdir example`: permanently delete a directory named `example`.
+- Other resources:
+  - [The Bash Academy](https://www.bash.academy/)
+  - [Bash Beginners Guide](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/)
+  - [Bash Programming HOWTO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
