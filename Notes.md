@@ -33,7 +33,7 @@
 - Directory terminologies:
   - `.` or **working directory** is the directory you're currently inside.
   - `..` or **parent directory** is the directory immediately above your current directory. 
-  - `~` (pronounced tilde) or **home directory** is the current user's top-level directory (the directory that has all that user's other directories inside it).
+  - `~` (tilde) or **home directory** is the current user's top-level directory (the directory that has all that user's other directories inside it).
 - **Absolute vs. relative path**:
   - A *partial path*, which is **relative** to *wherever you're currently located*, can be given to the directory you want to go, as long as the partial path includes all the steps needed to get there.
   - An **absolute** path is a full path all the way from the **home** directory.
