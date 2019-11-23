@@ -72,6 +72,8 @@
   - [The Bash Academy](https://www.bash.academy/)
   - [Bash Beginners Guide](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/)
   - [Bash Programming HOWTO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
+  - [Corey Schafer: Customize the terminal](https://www.youtube.com/watch?v=LXgXV7YmSiU)
+  - [Ubuntu Bash Colors](https://wiki.ubuntuusers.de/Bash/Prompt/)
 
 ## Version Control
 - **Version Control System (VCS)** or **Source Code Manager (SCM)** allows you to:
