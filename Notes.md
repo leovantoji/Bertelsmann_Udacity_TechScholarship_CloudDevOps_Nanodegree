@@ -72,3 +72,11 @@
   - [The Bash Academy](https://www.bash.academy/)
   - [Bash Beginners Guide](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/)
   - [Bash Programming HOWTO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
+
+## Version Control
+- [Wikipedia](https://en.wikipedia.org/wiki/Version_control): **Version Control** also known as *revision control* or *source control*, is the management of changes to documents, computer programs, large web sites, and other collections of information.
+- Common version control systems are **Git**, *Subversion*, and *Mercurial*.
+- 2 main types of version control system models:
+  - **Centralized model**: all users connect to a central, master repository.
+  - **Distributed model**: each user has the entire repository on their computer.
+- **Git** is the version control tool, while **GitHub** is the service that hosts Git projects.
