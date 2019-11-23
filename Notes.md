@@ -74,9 +74,25 @@
   - [Bash Programming HOWTO](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
 
 ## Version Control
+- **Version Control System (VCS)** or **Source Code Manager (SCM)** allows you to:
+  - Revert files to a previous state.
+  - Revert the entire project to a previous state.
+  - Review changes made over time.
+  - See who last modified something that might be causing a problem.
+  - Identify when an issue was introduced.
+  - Do many more things.
 - [Wikipedia](https://en.wikipedia.org/wiki/Version_control): **Version Control** also known as *revision control* or *source control*, is the management of changes to documents, computer programs, large web sites, and other collections of information.
 - Common version control systems are **Git**, *Subversion*, and *Mercurial*.
 - 2 main types of version control system models:
   - **Centralized model**: all users connect to a central, master repository.
   - **Distributed model**: each user has the entire repository on their computer.
 - **Git** is the version control tool, while **GitHub** is the service that hosts Git projects.
+- Key terminologies:
+  - **Commit (snapshot)**: Git thinks of its data like a set of snapshots of a mini file system. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. When a commit is made, only the changes that are in the **Staging index** are saved in the repo.
+  - **Repository (repo)**: A directory that contains your project work, as well as a few files (hidden by default in Mac OS X) which are used to communicate with Git. Repositories can exist either locally on your computer or as a remote copy on another computer.
+  - **Working directory**: The files that you see in your computer's file system. 
+  - **Checkout**: When content in the repository has been copied to the **Working directory**. It is possible to checkout many things from a repo. These include a file, a commit, a branch, etc.
+  - **Staging area**, **Staging index**, or **Index**: A file in the Git directory that stores information about what will go into your next commit. You can think of the staging area as a prep table where Git will take the next commit. Files on the **Staging Area** are poised to be added to the repo.
+  - **SHA**: is a 40-character ID number for each commit. SHA is composed of numbers (0-9) and latin characters (a-z), and calculated based on the contents of a file or directory structure in Git. An example of SHA: *e2adf8ae3e2e4ed40add75cc44cf9d0a869afeb6*.
+  - **Branch**: When a new line of development is created and diverges from the main line of development, a branch is created. This alternative line of development can continue without altering the main line.
+  
