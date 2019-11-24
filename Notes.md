@@ -98,3 +98,17 @@
   - **SHA**: is a 40-character ID number for each commit. SHA is composed of numbers (0-9) and latin characters (a-z), and calculated based on the contents of a file or directory structure in Git. An example of SHA: *e2adf8ae3e2e4ed40add75cc44cf9d0a869afeb6*.
   - **Branch**: When a new line of development is created and diverges from the main line of development, a branch is created. This alternative line of development can continue without altering the main line.
   
+## Git Repo
+- `.git` directory contents:
+  - **config file**: project specific configuration settings are stored here.
+  - **description file**: only used by GitWeb program.
+  - **hooks directory**: this is where we could place client-side or server-side scripts that we can use to hook into Git's different lifecycle events.
+  - **info directory**: contains the global excludes file.
+  - **objects directory**: stores all of the commits we make.
+  - **refs directory**: holds pointers to commits (i.e. branches and tags).
+- Other resources:
+  - [Git Internals - Plumbing and Porcelain](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
+  - [Customizing Git - Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+- Use `git init` command to create a new empty repo in the current directory.
+- Use `git clone <path-to-repo-to-clone> <new-repo-name>` to clone the repo into a directory under a different name. 
+- Use `git status` command to know what's going on with a repo.
