@@ -60,10 +60,15 @@
   ```
 - **Viewing files** with `cat` and `less`. The `cat` command displays the full contents of the file. Nonetheless, texts in files often can't fit on the screen at once. In such scenario, the `less` command becomes useful.
 - Different keys to move around while in `less` program:
-  - Scroll down with **Spacebar** or **down arrow**.
-  - Scroll up with `b` key or **up arrow**.
+  - `j` or `↓` or **Space bar** to move down one line at a time.
+  - `d` to move down by half the page screen.
+  - `f` to move down by a whole page screen.
+  - `k` or `↑` to move up one line at a time.
+  - `u` to move up by half the page screen.
+  - `b` to move up by a whole page screen. 
   - Search with **Forward slash** `/`.
   - Exit `less` with `q` key.
+ 
 - **Remove files** with `rm` and `rmdir` with caution as these 2 commands **permanently delete** files. `rmdir` only deletes *empty* directory.
   - `~$ rm example`: permanently delete a file named `example` without double-checking.
   - `~$ rm -i example`: permanently delete a file named `example`, but double-check first.
@@ -109,6 +114,13 @@
 - Other resources:
   - [Git Internals - Plumbing and Porcelain](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
   - [Customizing Git - Git Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+- **Globbing** crash course:
+  - Blank lines can be used for spacing.
+  - `#`: marks line as a comment.
+  - `*`: matches 0 or more characters.
+  - `?`: matches 1 character.
+  - `[abc]`: matches a, b, _or_ c.
+  - `**`: matches nested directories (e.g. `a/**/z` matches `a/z`, `a/b/z`, `a/b/c/z`).
 - Use `git init` command to create a new empty repo in the current directory.
 - Use `git clone <path-to-repo-to-clone> <new-repo-name>` to clone the repo into a directory under a different name. 
 - Use `git status` command to know what's going on with a repo.
@@ -117,11 +129,7 @@
 - Use `git log --stat` command to display the file(s) that have been modified, the number of lines that have been added/removed, and a summmary line with the total number of modified files and lines that have been added/removed.
 - Use `git log --patch` or `git log -p` command to display the files that have been modified, the location of the lines that have been added/removed, and the actual changes that have been made.
 - Use `git log -p <first-7-characters-of-SHA>` or `git show <first-7-characters-of-SHA>` command to show only the patch information of one commit.
-- Useful keys to navigate the log:
-  - `j` or `↓` to move down one line at a time.
-  - `d` to move down by half the page screen.
-  - `f` to move down by a whole page screen.
-  - `k` or `↑` to move up one line at a time.
-  - `u` to move up by half the page screen.
-  - `b` to move up by a whole page screen.
-  - `q` to quit the log.
+- Use `git add` command to move files from the **Working directory** to the **Staging index**.
+- Use `git commit`command to move files from the **Staging index** to the repo.
+- Use `git diff` command to see changes that have been made but haven't been commited yet.
+- The `.gitignore` file tells Git about the files that Git should not track. This file should be placed in the same directory that the `.git` file is.
