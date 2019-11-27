@@ -133,3 +133,4 @@
 - Use `git commit`command to move files from the **Staging index** to the repo.
 - Use `git diff` command to see changes that have been made but haven't been commited yet.
 - The `.gitignore` file tells Git about the files that Git should not track. This file should be placed in the same directory that the `.git` file is.
+- Use `git tag -a <SHA>` command to add a marker to the most recent commit or a specific commit. The tag doesn't move around as new commits are added.
