@@ -112,3 +112,16 @@
 - Use `git init` command to create a new empty repo in the current directory.
 - Use `git clone <path-to-repo-to-clone> <new-repo-name>` to clone the repo into a directory under a different name. 
 - Use `git status` command to know what's going on with a repo.
+- Use `git log` command to display all of the commits of a repo. By default, this command displays the SHA, the author, the date, and the message of every commit in the repo. 
+- Use `git log --oneline` command to list one commit per line, the first 7 characters of the commit's SHA, and the commit message.
+- Use `git log --stat` command to display the file(s) that have been modified, the number of lines that have been added/removed, and a summmary line with the total number of modified files and lines that have been added/removed.
+- Use `git log --patch` or `git log -p` command to display the files that have been modified, the location of the lines that have been added/removed, and the actual changes that have been made.
+- Use `git log -p <first-7-characters-of-SHA>` or `git show <first-7-characters-of-SHA>` command to show only the patch information of one commit.
+- Useful keys to navigate the log:
+  - `j` or `↓` to move down one line at a time.
+  - `d` to move down by half the page screen.
+  - `f` to move down by a whole page screen.
+  - `k` or `↑` to move up one line at a time.
+  - `u` to move up by half the page screen.
+  - `b` to move up by a whole page screen.
+  - `q` to quit the log.
