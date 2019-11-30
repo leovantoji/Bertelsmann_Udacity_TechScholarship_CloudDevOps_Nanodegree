@@ -121,6 +121,11 @@
   - `?`: matches 1 character.
   - `[abc]`: matches a, b, _or_ c.
   - `**`: matches nested directories (e.g. `a/**/z` matches `a/z`, `a/b/z`, `a/b/c/z`).
+- Combining branches together is called **merging**. Git can automatically merge the changes on different branches together. There are 2 main types of merges in Git: a **regular merge** and a **fast-forward merge**. A **fast-forward merge** will move the currently checked out branch *forward* until it points to the same commit that the other branch is pointing to.
+- When a merge fails, we have a **merge conflict**. Git will pause mid-merge telling you that there is a conflict and will tell you in what file or files the conflict occurred. To resolve the conflict in a file, you need to:
+  - Locate and remove all lines with merge conflict indicators.
+  - Determine what to keep.
+  - Save the file(s). Stage the file(s). Make a commit.
 - Use `git init` command to create a new empty repo in the current directory.
 - Use `git clone <path-to-repo-to-clone> <new-repo-name>` to clone the repo into a directory under a different name. 
 - Use `git status` command to know what's going on with a repo.
@@ -138,3 +143,4 @@
 - Use `git branch <new_branch_name> <SHA>` command to create the new branch and have it point to the commit with the provided SHA.
 - Use `git branch -d <branch_name>` command to delete a branch. Note that you can't delete the active branch so you have to switch to a different branch before you can delete the previously active branch. This command can't be used to delete a branch with commits that are not on any other branch. This helps prevent deleting new commits by accident. Use `git branch -D <branch_name>` command to force delete in that case.
 - Use `git checkout <branch>` command to switch between branches. Use `git checkout -b <new_branch>` to create a new branch and switch to that branch.
+- Use `git merge <name-of-branch-to-merge-in>` command to combine branches in Git.
