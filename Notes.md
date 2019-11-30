@@ -134,3 +134,7 @@
 - Use `git diff` command to see changes that have been made but haven't been commited yet.
 - The `.gitignore` file tells Git about the files that Git should not track. This file should be placed in the same directory that the `.git` file is.
 - Use `git tag -a <SHA>` command to add a marker to the most recent commit or a specific commit. The tag doesn't move around as new commits are added.
+- Use `git branch` command to list all branch names in the repo, create new branches, or delete branches. 
+- Use `git branch <new_branch_name> <SHA>` command to create the new branch and have it point to the commit with the provided SHA.
+- Use `git branch -d <branch_name>` command to delete a branch. Note that you can't delete the active branch so you have to switch to a different branch before you can delete the previously active branch. This command can't be used to delete a branch with commits that are not on any other branch. This helps prevent deleting new commits by accident. Use `git branch -D <branch_name>` command to force delete in that case.
+- Use `git checkout <branch>` command to switch between branches. Use `git checkout -b <new_branch>` to create a new branch and switch to that branch.
