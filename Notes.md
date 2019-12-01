@@ -157,3 +157,9 @@
   - E.g. `HEAD^`/`HEAD~`/`HEAD~1` indicate parent commit. `HEAD^^`/`HEAD~2` indicate grandparent commit.
 
 ## Working with Remotes
+- **Git vs. GitHub**: **Git** is a version control tool, while **GitHub** is a service to host Git projects.
+- The `git remote` command allows you to manage and interact with remote repos.
+  - It's possible to have links to multiple different remote repos.
+  - A shortname is the name that's used to refer to a remmote repo's location. Typically, the location is a URL, but it could be a file path on the same computer.
+  - Use `git remote add` command to add a connection to a new remote repo.
+  - Use `git remote -v` to see the details about a connection to a remote.
