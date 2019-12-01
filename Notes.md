@@ -144,3 +144,14 @@
 - Use `git branch -d <branch_name>` command to delete a branch. Note that you can't delete the active branch so you have to switch to a different branch before you can delete the previously active branch. This command can't be used to delete a branch with commits that are not on any other branch. This helps prevent deleting new commits by accident. Use `git branch -D <branch_name>` command to force delete in that case.
 - Use `git checkout <branch>` command to switch between branches. Use `git checkout -b <new_branch>` to create a new branch and switch to that branch.
 - Use `git merge <name-of-branch-to-merge-in>` command to combine branches in Git.
+- Use `git commit --amend` command to alter the most recent commit. You can either fix the commit message, include missed files (or changes to files), or do all of those.
+- Use `git revert <SHA-of-commit-to-revert>` command to undo the changes that were made by the provided commit and create a new commit to record the change.
+- Use `git reset <reference-to-commit>` command to:
+  - Move the `HEAD` and current branch pointer the the referenced commit.
+  - Erase commits with the `--hard` flag.
+  - Move committed changes to the staging index with the `--soft` flag.
+  - Unstage committed changes with `--mixed` flag (default).
+- Ancenstry references are used to indicate previous commits. The ancestry references are:
+  - `^`: indicates the parent commit.
+  - `~`: indicates the first parent commit.
+  - E.g. `HEAD^`/`HEAD~`/`HEAD~1` indicate parent commit. `HEAD^^`/`HEAD~2` indicate grandparent commit.
