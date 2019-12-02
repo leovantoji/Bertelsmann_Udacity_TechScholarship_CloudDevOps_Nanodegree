@@ -163,3 +163,6 @@
   - A shortname is the name that's used to refer to a remmote repo's location. Typically, the location is a URL, but it could be a file path on the same computer.
   - Use `git remote add` command to add a connection to a new remote repo.
   - Use `git remote -v` to see the details about a connection to a remote.
+- Use `git push <remote-shortname> <branch>` command to send local commits to a remote repo.
+  - The shortname of the remote repo you want to send commits to.
+  - The name of the branch that has the commits you want to send.
