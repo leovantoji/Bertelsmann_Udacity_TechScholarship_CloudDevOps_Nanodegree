@@ -166,3 +166,10 @@
 - Use `git push <remote-shortname> <branch>` command to send local commits to a remote repo.
   - The shortname of the remote repo you want to send commits to.
   - The name of the branch that has the commits you want to send.
+- Use `git pull <remote-shortname> <branch>` command to pull remote commits to a local repo. The following things happen after the command is run:
+  - The commit(s) on the remote branch are copied to the local repo.
+  - The local tracking branch (`origin/master`) is moved to point to the most recent commit.
+  - The local tracking branch (`origin/master`) is merged into the local branch (`master`).
+- Use `git fetch <remote-shortname> <branch>` command to retrieve commits from a remote repo's branch. Nonetheless, the command doesn't automatically merge the local branch with the remote tracking branch after those commits have been received. The following things happen after the command is run:
+  - The commit(s) on the remote branch are copied to the local repo.
+  - The local tracking branch (`origin/master`) is moved to point to the most recent commit.
