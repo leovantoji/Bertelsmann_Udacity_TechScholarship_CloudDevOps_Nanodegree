@@ -173,3 +173,4 @@
 - Use `git fetch <remote-shortname> <branch>` command to retrieve commits from a remote repo's branch. Nonetheless, the command doesn't automatically merge the local branch with the remote tracking branch after those commits have been received. The following things happen after the command is run:
   - The commit(s) on the remote branch are copied to the local repo.
   - The local tracking branch (`origin/master`) is moved to point to the most recent commit.
+- **Forking** a repo means making an identical copy of the existing repo. **Forking** is different from **cloning** in the sense that the forked remote repo remains a remote repo, whereas a cloned repo exists in the local machine.
