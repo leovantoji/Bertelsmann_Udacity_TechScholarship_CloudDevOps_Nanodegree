@@ -174,3 +174,25 @@
   - The commit(s) on the remote branch are copied to the local repo.
   - The local tracking branch (`origin/master`) is moved to point to the most recent commit.
 - **Forking** a repo means making an identical copy of the existing repo. **Forking** is different from **cloning** in the sense that the forked remote repo remains a remote repo, whereas a cloned repo exists in the local machine.
+- Use `git shortlog` command to see the number of commits made by each contributor.
+- Use `git log --author="<Name>"` command to filter commits made by a specific author.
+- Use `git log --grep="<String>"` command to filter commits with specific commit message.
+- Before you start doing any work, you should look for the project's **CONTRIBUTING.md** file.
+- Look at the GitHub issues for the project.
+  - Look at the existing issues to see if one is similar to the change you want to contribute.
+  - If necessary, create a new issue.
+  - Communicate the changes you'd like to make to the project maintainer in the issue.
+- When you start developing, commit all of your work on a topic branch:
+  - **DO NOT** work on the master branch.
+  - Make sure to give the topic branch clear and descriptive name.
+- As a general best practice for writing commits:
+  - Make frequent small commits.
+  - Use clear and descriptive commit messages.
+  - Update the README.md file.
+- A **pull request** is a request to the *original* or *source repo*'s maintainer to include changes in their project that you made in your fork of their project. You're requesting that they *pull* the changes you've made.
+- To create a **pull request**, a few things need to happen:
+  - You must **fork** the source repo.
+  - Clone your fork to your local machine.
+  - Make some commits to a topic branch (advisable).
+  - Push the commits back to **your fork**.
+  - Create a new pull request and choose the branch that has your new commits.
