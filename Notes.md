@@ -196,3 +196,22 @@
   - Make some commits to a topic branch (advisable).
   - Push the commits back to **your fork**.
   - Create a new pull request and choose the branch that has your new commits.
+- The maintainers of the original project will continue adding changes to their project - the one that you have forked. Thus, you should keep your fork in sync with their project so that you can include any changes that they make.
+- To get commits from a source repo, you need to:
+  - Get the cloneable URL of the source repo.
+  - Create a new remote with the `git remote add` command.
+    - Use the shortname `upstream` to point to the source repo.
+    - Provide the URL of the source repo.
+  - Fetch the new `upstream` remote.
+  - Merge the `upstream`'s branch into a local branch.
+  - Push the newly updated local branch to your `origin` repo.
+- Taking a number commits and combining them into one single commit is called **squashing**.
+- **Rebase commands** are the different commands you can do with `git rebase` command:
+  - Use `p` or `pick` to keep the commit as is.
+  - Use `r` or `reword` to keep the commit's content but alter the commit message.
+  - Use `e` or `edit` to keep the commit's content but stop before commiting so that you can add new content/files, remove content/files, or alter the content that was going to be commmitted.
+  - Use `s` or `squash` to combine this commit's changes into the previous commit (the commit above it in the list).
+  - Use `f` or `fixup` to combine this commit's change into the previous one but drop the commit message.
+  - Use `x` or `exec` to run a shell command.
+  - Use `d` or `drop` to delete the commit.
+- You should create a `backup` branch before rebasing so that it's easy to return to your previous state. Once you're happy with the rebase, you can delete the `backup` branch.
