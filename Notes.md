@@ -215,3 +215,48 @@
   - Use `x` or `exec` to run a shell command.
   - Use `d` or `drop` to delete the commit.
 - You should create a `backup` branch before rebasing so that it's easy to return to your previous state. Once you're happy with the rebase, you can delete the `backup` branch.
+
+## Cloud Computing
+- **Cloud computing** is the delivery of IT resources over the Internet. The cloud is like a virtual data centre accessible via the Internet that allows you to manage:
+  - Storage services like databases.
+  - Servers, compute power, networking.
+  - Analytics, AI, augmented reality.
+  - Security services for data and applications.
+- **Characteristics** of cloud computing:
+  - **Pay as you go** - You pay only for what you use and only when your code runs.
+  - **Autoscaling** - The number of active servers can grow or shrink based on demands.
+  - **Serverless** - Allows you to write and deploy code without having to worry about the underlying infrastructure.
+- **Types** of cloud computing:
+  - **Infrastructure-as-a-Service (IaaS)**: The provider supplies virtual server instances, storage, and mechanisms for you to manage servers.
+  - **Platform-as-a-Service (PaaS)**: A platform of development tools hosted on a provider's infrastructure.
+  - **Software-as-a-Service (SaaS)**: A software application that runs over the Internet and is managed by the service provider.
+- Cloud **Deployment Models**:
+  - A **Public Cloud** makes resources (databases, application development services, etc.) available over the Internet to the general public.
+  - A **Private Cloud** called On-premises, is a proprietary network that supplies services to a limited number of people.
+  - A **Hybrid Cloud** is a combination of both a public and a private cloud. The hybrid model is a growing trend in the industry for those organisations that have been slow to adopt the cloud due to being in a heavily regulated industry. The hybrid model gives organisations the flexibility to slowly migrate to the cloud.
+- **Benefits** of Cloud:
+  - Ability to innovate quickly.
+  - Scale globally in minutes.
+  - Deliver faster.
+  - Pay for only what you use.
+  - Avoid huge capital investments up front.
+  - Stop guessing about capacity.
+- **Global infrastructure**.
+  - A **Region** is considered a geographic location or an area on a map.
+  - An **Availability zone** is an isolated location within a geographic region and is a physical data centre within a specific region.
+  - An **Edge location** is as a mini-data centre used solely to cache large data files closer to a user's location.
+  - Additional information:
+    - There are Availability Zones (AZs) than there are Regions.
+    - There should be at least two AZs per Region.
+    - Each region is located in a separate geographic area.
+    - AZs are distinct locations that are engineered to be isolated from failures.
+- **Shared resonsibility model**: AWS is responsible for security **of** the cloud, while we are responsible for security **in** the cloud. Examples include:
+  - Securing edge locations (AWS).
+  - Monitoring physical device security (AWS).
+  - Providing physical access control to hardware/software (AWS).
+  - Database patching (AWS).
+  - Discarding physical storage devices (AWS).
+  - Managing AWS Indentity and Access Management (User).
+  - Encrypting data (User).
+  - Preventing or detecting when an AWS account has been compromised (User).
+  - Restricting access to AWS services to only those users who need it (User).
