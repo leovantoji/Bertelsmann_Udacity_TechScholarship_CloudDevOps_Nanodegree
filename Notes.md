@@ -260,3 +260,37 @@
   - Encrypting data (User).
   - Preventing or detecting when an AWS account has been compromised (User).
   - Restricting access to AWS services to only those users who need it (User).
+- **Servers in the Cloud** have revolutionised the IT industry.
+  - Scale capacity up and down based on demands.
+  - Storage, more memory and computing power can be added as needed.
+  - Obtain servers in minutes.
+  - No need for onsite hardware or capital expenses.
+
+## AWS Foundation & Compute Service
+- **EC2 (Elastic Cloud Compute)** is a foundational piece of AWS' cloud computing platform and is a service that provides servers for rent in the cloud. EC2 is **NOT considered serverless**.
+- **Instances** are phyiscal servers in an AZ / data centre.
+- There are several **pricing options** for EC2.
+  - **On demand** - Pay as you go, no contract.
+  - **Dedicated hosts** - You have your own dedicated hardware and don't share it with others.
+  - **Spot** - You place a bid on an instance price. If there is extra capacity that falls below your bid, an EC2 instance is provisioned. If the price goes above your bid while the instance is running, the instance is terminated.
+  - **Reserved instances** - You earn huge discounts if you pay up front and sign a 1-year or 3-year contract.
+- **EBS (Elastic Block Store)** is a storage solution for EC2 instances and is a physical hard drive that is attached to the EC2 instance to increase storage.
+- There are 2 types of memory for an EC2 instance:
+  - In memory (instance store).
+  - EBS.
+- EBS is able to **persist data** after EC2 is terminated and is **automatically replicated** in its AZ.
+- **Security** in the cloud allows you to have complete control over your virtual networking environment.
+  - Configure your virtual network with public or private facing subnets.
+  - Launch your servers in the selected networks to secure access.
+- **VPC (Virtual Private Cloud)** allows you to create your own private network in the cloud. You can launch services, like EC2, inside of that private network. A VPC spans all the AZ's in the region.
+- **Compute power in the cloud** is a faster way to build applications, providing:
+  - No servers to manage (i.e. serverless).
+  - Ability to continuously scale.
+  - Ability to run code on demand in response to events.
+  - Pay only when your code runs.
+- **AWS Lambda** provides you with computing power in the cloud by allowing you to execute code without standing up or managing servers. 
+  - Lambdas have a time limit of 15 minutes.
+  - The code you run on AWS Lambda is called **Lambda function**.
+  - **Event-driven**: Lambda code can be triggered by other AWS services. 
+  - Application developed using Lambda is considered **serverless**.
+- **Elastic Beanstalk** is an orchestration service that allows you to deploy a web application at the touch of a button by spinning up (or provisioning) all of the services that you need to run your application.
