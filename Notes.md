@@ -294,3 +294,62 @@
   - **Event-driven**: Lambda code can be triggered by other AWS services. 
   - Application developed using Lambda is considered **serverless**.
 - **Elastic Beanstalk** is an orchestration service that allows you to deploy a web application at the touch of a button by spinning up (or provisioning) all of the services that you need to run your application.
+
+## Storage & Content delivery
+- Storage and database services in the cloud provide a place for companies to collect, store, and analyse the data they have collected over the years at a massive scale. Below are some storage & database services:
+  - Amazon S3 (Simple Storage Service).
+  - Amazon S3 Glacier.
+  - DynamoDB.
+  - Relational Database Service (RDS).
+  - Redshift.
+  - ElastiCache.
+  - Neptune.
+  - Amazon DocumentDB.
+- **Benefits** of storage services include:
+  - **Durability**: No data loss.
+  - **Availability**: Fast and reliable access to the data stored in the cloud.
+  - **Scalability**: Meet demand seamlessly and maintain a steady state through automatic modification.
+    - **Vertical** (Scaling up): Modify the server to meet demand (e.g. add more memory or capacity to a single server, etc.)
+    - **Horizontal** (Scaling out): Add or remove servers to meet demand.
+    - **Diagonal** scaling is a combination of vertical and horizontal scaling.
+- Amazon S3 is an **object storage system** in the cloud.
+- **S3 use cases**:
+  - Hosting static websites.
+  - Content delivery.
+  - Backup and recovery.
+  - Archiving and big data.
+  - Application data.
+  - Hybrid cloud storage.
+- S3 offers several **storage classes**, which are different data access levels for your data at certain price points. For example, S3 Glacier is a secure, durable, and low-cost storage class for data archiving.
+- **DynamoDB** is a NoSQL document database service that is fully managed. Unlike traditional databases, NoSQL databases, are schema-less, which means that the database doesn't contain a fixed (rigid) data structure.
+  - DynamoDB can handle more than 10 trillion requests per day.
+  - DynamoDB is serverless as there are no servers to provision, patch, or manage.
+  - DynamoDB supports key-value and document data models.
+  - DynamoDB synchronously replicates data across three AZs in an AWS region.
+  - DynamoDB supports GET/PUT operations using a primary key.
+  - Data is stored in DynamoDB in JSON or JSON-like format.
+- **RDS** (Relational Database Service) is a service that aids in the administration and management of databases. RDS assists with database administrative tasks that include upgrades, patching, installs, backups, monitoring, performance checks, security, etc. Nonetheless, RDS doesn't allow you to access your database via secure shell (SSH).
+  - Database Engine support includes: Oracle, PostgreSQL, MySQL, MariaDB, SQL Server.
+- **Redshift** is a cloud data warehousing service to help companies manage big data. Redshift allows you to run fast queries against your data using SQL, ETL, and BI tools. Redshift stores data in a column format to aid in fast querying.
+  - Redshift stores data in columnar format (not a row store) which aids in fast query and analysis.
+  - Redshift automates administrative and maintenance tasks.
+  - Redshift delivers great performance by using machine learning.
+  - Redshift Spectrum is a feature that enables you to run queries against data in Amazon S3.
+  - Redshift encrypts and keeps your data secure in transit and at rest.
+  - Redshift clusters can be isolated using Amazon VPC.
+  - Redshift is **NOT** used for processing day-to-day transactions.
+- **CDN (Content Delivery Network)** speeds up delivery of your static and dynamic web content by caching content in an Edge location close to your user base. The **benefits of CDN** include:
+  - Low latency.
+  - Decreased server load.
+  - Better user experience.
+- **CloudFront** is used as a global CDN. CloudFront speeds up the delivery of your content through Amazon's worldwide network of mini-data centers called Edge locations.
+  - Amazon countinously adds new Edge Locations.
+  - CloudFront ensures that end-user requests are served from the closest edge location.
+  - CloudFront works with non-AWS origin sources.
+  - GeoIP blocking can be used to serve content (or not serve content) to specific countries.
+  - Cache control headers determine how frequently CloudFront needs to check the origin for an updated version your file.
+  - The maximum size of a single file that can be delivered through Amazon CloudFront is 20 GB.
+
+
+
+
