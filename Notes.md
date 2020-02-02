@@ -389,9 +389,23 @@
     - Redundancy maintains continuous operations in an emergency. It means that if you lose a server, the load balancer will send requests to other working servers. 
     - Performance: If a server starts having issues or bottlenecks, the load balancer will add more servers to the pool of available servers. Auto scaling automatically adjusts capacity to maintain a steady state.
 
-
-
-
+## Messaging & Containers
+- **Messaging** typically occurs between Internet-based applications and devices. One system can send message to another system.
+- **SNS (Simple Notification Service)** is a cloud service that allows you to send notifications to the users of your applications. SNS allows you to **decouple the notification logic** from being embedded in your applications and allows notifications to be **published to a large number of subscribers**.
+  - SNS uses a publish/subscribe model.
+  - SNS can publish messages to Amazon SQS queues, AWS Lambda functions, and HTTP/S webhooks.
+  - A notification can only contain 1 message.
+- **SQS (Simple Queue Service)** is a fully managed message queuing service that allows you to integrate queuing functionality in your application. SQS offers two types of message queues: Standard and FIFO.
+  - FIFO should be used when message order is critial, while Standard can be used when messages arrive more than once and can be processed out of order.
+  - FIFO queuses guarantee the order of messages.
+  - Standard queues offer best-effort ordering but no guarantees.
+  - Standard queues deliver a message at least once, but occasionally more than one copy of a message is delivered.
+- A **container** consists of everything an application needs to run: the application itself and its dependencies (e.g. libraries, utilities, configuration files), all bundled into one package. Each container is an independent component that can run on its own and be moved from environment to environment.
+- **ECS (Elastic Container Service)** is an orchestration service used for automating deployment, scaling, and managing of your containerised applications. ECS works well with Docker containers by:
+  - Launching and stopping Docker containers.
+  - Scaling your application.
+  - Querying the state of your applications.
+- Docker is the only container platform supported by Amazon ECS.
 
 
 
