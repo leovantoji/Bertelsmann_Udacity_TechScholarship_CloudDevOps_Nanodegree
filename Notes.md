@@ -350,6 +350,21 @@
   - Cache control headers determine how frequently CloudFront needs to check the origin for an updated version your file.
   - The maximum size of a single file that can be delivered through Amazon CloudFront is 20 GB.
 
-
-
+## Security in the cloud
+- Cloud security protects data, applications that access the data, and the infrastructure that the applications run on. The way security is delivered depends on the cloud security options provided by the cloud service company.
+- **AWS Shield** is a managed **DDoS (Distributed Denial of Service)** protection service that safeguards web applications using AWS.
+  - AWS Shield Standard is always on, using techniques to detect malicious traffic.
+  - AWS Shield Advanced provides enhanced detection.
+  - A **DDoS attack** is an attempt to make a website or an application unavailable by overwhelming it with traffic from multiple sources.
+- **AWS WAF (Web Application Firewall)** provides a firewall that protects your web applications.
+  - WAF can stop common web attacks by **reviewing the data being sent to your application** and stop well-known attacks.
+  - WAF helps protect your website from common attack techniques such as **SQL injection** and **Cross-Site Scripting (XSS)**.
+  - **SQL injection** attacks are a type of injection attack, in which SQL commands are injected into data-plane input in order to effect the execution of predefined SQL commands.
+  - **XSS** attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites.
+- **IAM (Identity & Access Management)** is an AWS service that allows us to configure who can access our AWS account, services, or even applications running in our account. IAM is a global service and is automatically available across all regions.
+  - **User/Entity** is a person or service that interacts with services or applications running in your AWS account.
+  - **IAM Group** is a collection of users.
+  - **IAM Role** is an identity with permissions or a set of privileges.
+  - **Policy** defines granular level permissions.
+  - IAM Policies are written in JSON.
 
