@@ -368,3 +368,32 @@
   - **Policy** defines granular level permissions.
   - IAM Policies are written in JSON.
 
+## Networking & Elasticity in the cloud
+- Networks reliably carry loads of data around the globe allowing for the delivery of content and applications with high availability. The network is the foundation of your infrastructure. 
+- **Route 53** is a cloud domain name systems (DNS) service that has servers distributed around the globe used to translates human-readable names like [Google](www.google.com) into the numeric IP addresses like 74.125.21.147.
+  - Scales automatically to manage spikes in DNS queries.
+  - Allows you to register a domain name (or manage an existing).
+  - Routes internet traffic to the resources for your domain.
+  - Checks the health of your resources.
+  - Allows you to route users based on the user's geographic location.
+- With **elasticity**, your servers, databases and application resources can automatically scale up or down based on your load.
+- **EC2 Auto Scaling** is a service that monitors your EC2 instances and automatically adjusts by adding or removing EC2 instances based on conditions you define in order to maintain application availability and provide peak performance to your users.
+  - Automatically scale in and out based on needs.
+  - Included automatically with Amazon EC2.
+  - Automate how your Amazon EC2 instances are managed.
+  - EC2 predictive scaling removes the need for manual adjustment of auto scaling parameters over time.
+- **Elastic Load Balancer** automatically distributes incoming application traffic accross multiple servers.
+  - Balances load between two or more servers.
+  - Stands in front of a web server.
+  - Provides **redundancy** and **performance**.
+    - Redundancy maintains continuous operations in an emergency. It means that if you lose a server, the load balancer will send requests to other working servers. 
+    - Performance: If a server starts having issues or bottlenecks, the load balancer will add more servers to the pool of available servers. Auto scaling automatically adjusts capacity to maintain a steady state.
+
+
+
+
+
+
+
+
+
