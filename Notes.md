@@ -407,6 +407,28 @@
   - Querying the state of your applications.
 - Docker is the only container platform supported by Amazon ECS.
 
+## AWS Management
+- **Logging** provides visibility into your cloud resources and applications. For applications that run in the cloud, you will need access to logging and auditing services to help you proactively monitor your resources and applications. Logging helps answer important questions like:
+  - How is the server performing?
+  - What is the current load on the server?
+  - What is the root cause of an application error that a user is seeing?
+  - What is the path that leads to this error?
+- **Cloud Trail** allows you to audit (or review) everything that occurs in your AWS account. Cloud Trail does this by recording all the AWS API calls occuring in your account and delivering a log file to you.
+- **Cloud Watch** is a service that monitors resources and applications that run on AWS by collecting data in the form of logs, metrics and events.
+  - Collect and track metrics.
+  - Collect and monitor log files.
+  - Set alarms and create triggers to run your AWS resources.
+  - React to changes in your AWS resources.
+- **Infrastructure as Code** allows you to describe and provision all the infrastructure resources in your cloud environment. You can stand up servers, databases, runtime parameters, resources, etc. based on scripts that you write. Infrastructure as Code is a time-saving feature because it allows you to provision (or stand up) resources in a reproducible way.
+- **AWS Cloud Formation** allows you to model entire infrastructure in a text file template allowing you to provision AWS resources based on the scripts you write.
+  - Cloud Formation templates are written using JSON or YAML.
+  - AWS resources which are part of a Cloud Formation stack can still be individually managed.
+- **AWS CLI** allows you to access and control services running in your AWS account from the command line.
+
+
+
+
+
 
 
 
