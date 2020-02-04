@@ -425,8 +425,18 @@
   - AWS resources which are part of a Cloud Formation stack can still be individually managed.
 - **AWS CLI** allows you to access and control services running in your AWS account from the command line.
 
-
-
+## Cloud DevOps
+- Issues that DevOps tries to solve:
+  - Unpredictable deployments.
+  - Mismatched environments (development doesn't match production).
+  - Configuration drift.
+- **Benefits** of DevOps:
+  - Predictable deployments because it's done via an automated script.
+  - Enable **CI/CD (Continuous Integration Continuous Deployment)** so that new features are automatically deployed with all the required dependencies.
+    - **CI (Continuous integration)** is the process flow of testing any change made to the deployment flow.
+    - **CD (Continuos deployment)** tracks those changes made to the deployment flow through to staging and production systems.
+- CloudFormation script should be **split into several files based on type of resources**. For example, you would have a file for network resources, another for database resources and so on. This allows expert to work on, and become familiar with, their resources and leverage their existing knowledge.
+- YAML and JSON file formats are both supported in CloudFormation, but **YAML is the industry preferred version** that's used for AWS and other cloud providers (Azure, GCP).
 
 
 
