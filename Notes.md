@@ -283,6 +283,19 @@
   - Configure your virtual network with public or private facing subnets.
   - Launch your servers in the selected networks to secure access.
 - **VPC (Virtual Private Cloud)** allows you to create your own private network in the cloud. You can launch services, like EC2, inside of that private network. A VPC spans all the AZ's in the region.
+- A **Subnet** is a subset of the overall VPC network and it only exists in a single availability zone, unlike its parent network, the VPC. 
+  - A subnet contains resources, and can be assigned access rights that apply to all resources within that subnet. Subnets can be public or private. 
+  - Public subnets are accessible to external users. Private subnets are only accessed internally by other resources within your cloud container.
+- A **Route table** is a set of entries or rules associated with one or more of your subnets inside your VPC.
+  - These rules allow or deny traffic to/from the address ranges that you specify.
+  - Rules can be as open as the entire world or restricted to a single IP address.
+- Use IP addresses for **routing traffic**. We can route traffic to stay within the VPC, or within a particular subnet, for security reasons.
+- An **Internet Gateway (IGW)** is a resource thaat enables inbound and outbound traffic from the internet to your VPC. 
+  - An Internet Gateway allows external users to communicate with parts of your VPC.
+  - You **don't need an Internet Gateway** if you create a private VPC for an application that is internal to your company.
+- **Network Address Translation (NAT) Gateway** provides outbound-only Internet Gateway for private services to access the Internet. This keeps the private service protected from inbound connections, but allows it to connect to the Internet in order to perform functions such as downloading software updates.
+  - The NAT Gateway serves as an intermediary to take a private resource's request, connect to the Internet, and then relay the response back to the private resource without exposing that private resource's IP address to the public.
+  - NAT Gateways must be placed inside the public subnets and not the private subnets. NAT Gateways need to be in the public subnet so that they can communicate with the public Internet, and handle requests from resources that are in a private subnet.
 - **Compute power in the cloud** is a faster way to build applications, providing:
   - No servers to manage (i.e. serverless).
   - Ability to continuously scale.
@@ -438,6 +451,7 @@
 - CloudFormation script should be **split into several files based on type of resources**. For example, you would have a file for network resources, another for database resources and so on. This allows expert to work on, and become familiar with, their resources and leverage their existing knowledge.
 - YAML and JSON file formats are both supported in CloudFormation, but **YAML is the industry preferred version** that's used for AWS and other cloud providers (Azure, GCP).
 
+## Infrastructure Diagrams
 
 
 
