@@ -451,8 +451,6 @@
 - CloudFormation script should be **split into several files based on type of resources**. For example, you would have a file for network resources, another for database resources and so on. This allows expert to work on, and become familiar with, their resources and leverage their existing knowledge.
 - YAML and JSON file formats are both supported in CloudFormation, but **YAML is the industry preferred version** that's used for AWS and other cloud providers (Azure, GCP).
 
-## Infrastructure Diagrams
-
 
 
 
