@@ -451,7 +451,25 @@
 - CloudFormation script should be **split into several files based on type of resources**. For example, you would have a file for network resources, another for database resources and so on. This allows expert to work on, and become familiar with, their resources and leverage their existing knowledge.
 - YAML and JSON file formats are both supported in CloudFormation, but **YAML is the industry preferred version** that's used for AWS and other cloud providers (Azure, GCP).
 
+## Servers and Security Group
+- **Security groups** are specific to individual resources (EC2 servers, databases) and not to subnets.
+- In cloud, traffic is **blocked by default**, so you have to explicitly open ports to allow traffic in and out. This is a general networking concept.
+- **Ingress rules** are for inbound traffic, and **egress rules** are for outbound traffic.
+- Ingress rules restrict or allow traffic trying to reach our resources on specific ports.
+- Egress rules restrict or allow traffic originating from our server -- typically we are ok allowing all outbound traffic without restrictions as this doesn’t pose a risk for a security breach.
+- For **ingress rules**, we want to limit inbound traffic, for security, to a single port or just a handful of ports required by the application we are running.
+  - If it's a public server, for example, it will require `port 80` open to the world (World = `0.0.0.0/0`).
+  - Should you need the SSH port open, restrict this port only to your specific IP address.
+- For **egress rules**, we want to give the resources full access to the Internet, so we give egress access to all ports from `0` to `65535`.
 
-
-
-
+## Storage and Databases
+- **Relational Database Service (RDS)**: AWS service for creating databases.
+  - Most applications need their data to persist and not be lost, which requires a database.
+  - We don't want a database to be a single point of failure, so we'll use resources that are designed for reliability. For example, RDS for the database, and S3 for the filestore.
+  - AWS Aurora and MySQL have no additional licensing costs. Microsoft SQL Server will have additional licensing costs.
+  - A single RDS server can host multiple databases.
+  - A database should have a read replica if you want to accommodate statistical reporting and other read-only queries.
+- Use **Filestores** instead of databases for large files, such as videos and text documents.
+- Configuration files and sensitive encrypted data are best stored in specific filestores rather than inside the servers. Autoscaling groups may create or destroy servers, so keep data that you want to persist in separate resources such as filestores.
+- S3 can be used to store your config files, media or log files. Your servers don't need credentials to access S3 provided they have a role assigned.
+- We recommend you choose RDS as opposed to installing a database in your own servers that you have to manage and back up yourself.
